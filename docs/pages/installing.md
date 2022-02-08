@@ -30,31 +30,31 @@ import { setupCache } from 'axios-cache-interceptor';
 // ES Modules
 import { setupCache } from 'axios-cache-interceptor/esm';
 
-// Universal
+// Universal (UMD)
 const { setupCache } = require('axios-cache-interceptor/umd');
 ```
 
 ## With CDN
 
 ```html
-<!-- Production for ES6+ (~10.5KiB) -->
+<!-- Development build for ES2020+ (~11.3 KiB) -->
 <script
-  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.4/umd/es6.js"
-  integrity="sha256-9DBTX+qTxh2wZebm04pvXJ7heIcJCQ/9bNjwmWspFO4="
+  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.8/umd/dev.js"
+  integrity="sha256-SZVzXptEUxn+mOVIPQPJRnGFmFV+/8prfTx2pMyrbeM="
   crossorigin="anonymous"
 ></script>
 
-<!-- Production for ES2017+ (~9.91 KiB) -->
+<!-- Production for ES2017+ (~9.85 KiB) -->
 <script
-  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.4/umd/index.js"
-  integrity="sha256-1kFTtXnJ/De+rU65kIfjhP4fBnlK2YV3b11y8G5njU0="
+  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.8/umd/index.js"
+  integrity="sha256-FUDdb76oASr8kl/6iiNlz+W0yLLcmyS4L/+CGNWKTfo="
   crossorigin="anonymous"
 ></script>
 
-<!-- Production for ES5+ (~13.9KiB) (Needs Promise polyfill) -->
+<!-- Production for ES5+ (~13.9 KiB) (Needs Promise polyfill) -->
 <script
-  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.4/umd/es5.js"
-  integrity="sha256-68y8g1PP7ZwbzCh69uI3RL6WFuIr/WRd0ZmgJMsemmg="
+  src="https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.8/umd/es5.js"
+  integrity="sha256-EzMv9XzLARcJMVDg0UrCT3r3+sMgnSriAI/nK1opXTI="
   crossorigin="anonymous"
 ></script>
 ```
@@ -69,10 +69,10 @@ You can import any [CDN Url](#with-cdns) and use it in your code. **UMD Compatib
 
 ```js
 // ESM with Skypack CDN
-import { setupCache } from 'https://cdn.skypack.dev/axios-cache-interceptor@0.8.4';
+import { setupCache } from 'https://cdn.skypack.dev/axios-cache-interceptor@0.8.8';
 
 // UMD with JSDeliver CDN
-import { setupCache } from 'https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.4/umd/index.js';
+import { setupCache } from 'https://cdn.jsdelivr.net/npm/axios-cache-interceptor@0.8.8/umd/index.js';
 ```
 
 ## Official support table

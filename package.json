@@ -1,6 +1,6 @@
 {
   "name": "axios-cache-interceptor",
-  "version": "0.8.5",
+  "version": "0.8.8",
   "description": "Cache interceptor for axios",
   "main": "./cjs/index.js",
   "types": "./cjs/index.d.ts",
@@ -17,7 +17,7 @@
   "runkitExampleFilename": "./examples/runkit.js",
   "scripts": {
     "build": "sh build/build.sh",
-    "test": "tsc --noEmit && jest --coverage",
+    "test": "jest --coverage",
     "check": "sh build/check.sh",
     "format": "prettier --write .",
     "lint": "eslint . --ext .ts",
@@ -35,17 +35,6 @@
     "http",
     "plugin",
     "wrapper"
-  ],
-  "files": [
-    "LICENSE",
-    "README.md",
-    "tsconfig.json",
-    "umd/",
-    "cjs/",
-    "esm/",
-    "src/",
-    "types/",
-    "examples/"
   ],
   "author": {
     "name": "Arthur Fiorette",
@@ -70,8 +59,8 @@
     "@types/jest": "^27.4.0",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
-    "@typescript-eslint/parser": "^5.10.0",
-    "auto-changelog": "^2.3.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "auto-changelog": "^2.4.0",
     "axios": "~0.25.0",
     "es-check": "^6.1.1",
     "eslint": "^8.7.0",
